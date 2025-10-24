@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unique Number Checker</title>
+  <style>
+  body {
+     font-family: Arial;
+	 background: #f5f5f5;
+	 text-align: center;
+	 margin-top: 50px;
+	 }
+	 input, button {
+	   padding: 10px;
+	   font-size: 16px;
+	 }
+	 #result {
+	   margin-top: 20px;
+	   font-weight: bold;
+	 }
+	 </style>
+	 </head>
+	 <body>
+	 
+	 <h2>Check Unique Number</h2>
+	 <input type="number" id="number Input"
+	 placeholder="Enter a number" />
+	   <button
+	 onclick="checkUnique()">Check</button>
+	 
+	   <div id="result"></div>
+	    
+	   <script>
+	     function checkUnique() {
+		   const numStr =
+	document.getElementById("numberInput").value;
+	       const digits = {};
+		   
+		   for (let char of numStr') {
+		    if (digits[char]) {
+	document.getElementById("result").innerText = numStr + " is a Unique Number.";
+        }
+
+
+	document.getElementById("result").innerText = numStr + " is a Unique Number.";
+        }
+       </script>
+       
+       </body>
+        </html>	   
+	   
+	 
