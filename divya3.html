@@ -1,0 +1,72 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iBOMMA Movies</title>
+  <style>
+   body {
+     font-family: Arial, sans-serif;
+	 padding: 20px;
+	 background-color: #f9f9f9;
+	 }
+	 
+	 h1 {
+	   color: green;
+	   }
+	   
+	   input[type="text"] {
+	    padding: 8px;
+		width: 200px;
+	   }
+	   
+	   img {
+	     margin-top: 10px;
+		 width: 200px;
+		 border-radius: 10px;
+		 }
+		 
+		 button {
+		    margin-top: 10px;
+			margin-right: 10px;
+			padding: 8px 12px;
+			cursor: pointer;
+			}
+		</style>
+		</head>
+		<body>
+		
+    <h1>iBOMMA</h1>
+	<input type="text" placeholder="Search
+Movies..." value="papa" disabled>
+
+    <br><br>
+	<img src="images/papa.jpg"https://timesofindia.indiatimes.com/entertainment/telugu/movie-details/papa/movieshow/121773752.cms	alt="papa"
+ id="poster">
+ 
+   <h3>papa</h3>
+   
+   <!-- Copy link button -->
+   <button
+  onclick="copyLink('https://ibomma.link/papa')" Copy Link</button>
+  
+   <!-- Download poster button -->
+  <a href="images/papa.jpg"
+  download="papa.jpg">
+    <button> Download Poster</button>
+</a>	
+	
+	<script>
+	  function copyLink(link) {
+	  
+navigator.clipboard.writeText(link).then
+(() => {
+        alert("Link copied: " + link);
+		}).catch(err => {
+		  alert("Failed to copy link.");
+		 });
+		}
+	</script>
+	
+	</body>
+	</html>
+	
