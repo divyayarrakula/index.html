@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html>
+<head>
+   <title>Factors of a Number</title>
+   <style>
+     body {
+	    font-family: Arial;
+		text-align: center;
+		margin-top: 50px;
+       }
+	   input,button {
+	     padding: 10px;
+		 font-size: 16px;
+	   }
+	   </style>
+	   </head>
+	   <body>
+	     
+		 <h2>Find Factors of a Number</h2>
+		 <input type="number" id="number"
+		 placehilder="Enter a number" />
+		 <button onclick="findFactors()">Show
+		 Factors</button>
+		 
+		 <div id="result"></div>
+		 
+		 <script>
+		  function findFactor() {
+            const num =
+		parseInt(document.getElementById("number").value);
+		    const resultDiv =
+		document.getElementById("result");
+  
+            if (isNaN(num) || num <= 0) {
+              resultDiv.innerHTML = "Please enter a positive number .";
+		}
+        let factors = [];
+        for (let i = 1; i <= num; i++) {
+          if (num % i === 0) {
+            factors.push(i);
+           }
+         }
+         resultDiv.innerHTML = "Factors of " + num + "are: <br>" + factor.join(",");
+        }
+       </script>
+      
+        </body>
+         </html>		
+		
